@@ -8,6 +8,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sed -i 's/robbyrussell/xiong-chiamiov-plus/g' .zshrc
 zsh
 
+## Instal exa
+sudo apt install exa -y
+
 ## Install Neofetch
 sudo apt install neofetch -y
 
