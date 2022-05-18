@@ -10,3 +10,8 @@ zsh
 
 ## Install Neofetch
 sudo apt install neofetch -y
+
+## Config locale
+sudo localectl set-locale fr_FR.UTF-8
+sudo localectl set-keymap fr
+sudo localectl set-x11-keymap fr
