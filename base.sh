@@ -1,7 +1,7 @@
 #! /bin/sh
 
-## Install ZSH, GIT
-sudo apt install zsh git -y
+## Install ZSH, GIT, CURL
+sudo apt install zsh git curl -y
 ## Install Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ## Zsh Theme
