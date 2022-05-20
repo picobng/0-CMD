@@ -1,0 +1,4 @@
+GPIO3(5) + GND(6,9,14)
+
+sudo nano /boot/config.txt
+  dtoverlay=gpio-shutdown
