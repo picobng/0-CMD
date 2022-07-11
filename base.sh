@@ -22,3 +22,8 @@ sudo localectl set-x11-keymap fr
 ## Changement UDI et GID si besoin
 sudo usermod -u 1000 foo
 sudo groupmod -g 1000 foo
+##### Verif
+sudo id -u foo
+sudo id -g foo
+sudo grep foo /etc/passwd
+sudo grep foo /etc/group
