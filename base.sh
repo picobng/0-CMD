@@ -18,3 +18,7 @@ sudo apt install neofetch -y
 sudo localectl set-locale fr_FR.UTF-8
 sudo localectl set-keymap fr
 sudo localectl set-x11-keymap fr
+
+## Changement UDI et GID si besoin
+sudo usermod -u 1000 foo
+sudo groupmod -g 1000 foo
