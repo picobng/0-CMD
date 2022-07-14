@@ -8,6 +8,21 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sed -i 's/robbyrussell/xiong-chiamiov-plus/g' .zshrc
 zsh
 
+## Install CockPit
+cd /tmp
+
+
+sudo apt install -y cockpit && cockpit-doc
+
+wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.8/cockpit-navigator_0.5.8-1focal_all.deb
+sudo apt install ./cockpit-nav
+
+wget https://github.com/45Drives/cockpit-file-sharing/releases/download/v3.2.0/cockpit-file-sharing_3.2.0-1focal_all.deb
+sudo apt install ./cockpit-fil
+
+wget https://github.com/45Drives/cockpit-benchmark/releases/download/v0.2.1/cockpit-benchmark_0.2.1-1focal_all.deb
+sudo apt install ./cockpit-benchmark
+
 ## Instal exa
 sudo apt install exa -y
 
@@ -27,3 +42,4 @@ sudo id -u foo
 sudo id -g foo
 sudo grep foo /etc/passwd
 sudo grep foo /etc/group
+
