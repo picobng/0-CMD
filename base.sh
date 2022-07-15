@@ -1,5 +1,7 @@
 #! /bin/sh
 
+sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
+
 ## Install ZSH, GIT, CURL
 sudo apt install zsh git curl -y
 ## Install Oh-My-Zsh
@@ -10,9 +12,7 @@ zsh
 
 ## Install CockPit
 cd /tmp
-
-
-sudo apt install -y cockpit && cockpit-doc
+sudo apt install -y cockpit cockpit-doc
 
 wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.8/cockpit-navigator_0.5.8-1focal_all.deb
 sudo apt install ./cockpit-nav
