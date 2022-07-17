@@ -9,7 +9,8 @@ import datetime
 #########################
 sleepTime = 30  # Temps entre deux relevés de température
                 # écriture d'un journal d'évenements
-fileLog = open('/home/pi/run-fan.log', 'w+')
+fileLog = open('/home/n0ne/.scripts/fan.log', 'w+')
+GPIO.setwarnings(False)
 
 #########################
 # Horodatage des messages de journal
