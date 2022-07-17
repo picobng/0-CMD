@@ -14,7 +14,7 @@ zsh
 cd /tmp
 sudo apt install -y cockpit cockpit-doc
 
-wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.8/cockpit-navigator_0.5.8-1focal_all.deb && sudo apt install ./cockpit-nav
+wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.8/cockpit-navigator_0.5.8-1focal_all.deb && sudo apt install ./cockpit-navigator_0.5.8-1focal_all.deb
 wget https://github.com/45Drives/cockpit-file-sharing/releases/download/v3.2.0/cockpit-file-sharing_3.2.0-1focal_all.deb && sudo apt install ./cockpit-file-sharing_3.2.0-1focal_all.deb -y
 wget https://github.com/45Drives/cockpit-benchmark/releases/download/v0.2.1/cockpit-benchmark_0.2.1-1focal_all.deb && sudo apt install ./cockpit-benchmark_0.2.1-1focal_all.deb -y
 cd /usr/share/cockpit && sudo git clone https://github.com/MRsagi/cockpit-temperature-plugin.git
@@ -31,11 +31,11 @@ sudo localectl set-keymap fr
 sudo localectl set-x11-keymap fr
 
 ## Changement UDI et GID si besoin
-sudo usermod -u 1000 foo
-sudo groupmod -g 1000 foo
-##### Verif
-sudo id -u foo
-sudo id -g foo
-sudo grep foo /etc/passwd
-sudo grep foo /etc/group
+    - sudo usermod -u 1000 foo
+    - sudo groupmod -g 1000 foo
+  ##### Verif
+        - sudo id -u foo
+        - sudo id -g foo
+        - sudo grep foo /etc/passwd
+        - sudo grep foo /etc/group
 
