@@ -23,3 +23,7 @@ alias flic="nmap -v -Pn -A"
 
 alias listen="sudo ss -tulpn | grep LISTEN"
 alias last="sudo tail -30 /var/log/syslog"
+
+alias temp="sudo watch -n 2 vcgencmd measure_temp"
+alias temp2="awk '{printf("\ntemp=%.1f°C\n\n",$1/1e3)}' /sys/class/thermal/thermal_zone0/temp"
+alias freq="sudo watch -n1 vcgencmd measure_clock arm"
