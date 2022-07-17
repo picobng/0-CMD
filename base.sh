@@ -39,6 +39,8 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo groupadd docker
 sudo usermod -aG docker n0ne
+sudo chown "n0ne":"n0ne" /home/n0ne/.docker -R
+sudo chmod g+rwx "/home/n0ne/.docker" -R
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 sudo reboot
