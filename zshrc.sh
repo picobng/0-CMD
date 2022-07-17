@@ -7,8 +7,8 @@ alias lll='ls -la'
 alias lla='ls -A'
 #alias l='ls -CF'
 
-alias maj='sudo apt-get update && echo -e \nUpgrade && sudo apt-get upgrade && echo -e \nFin.'
-alias majall='sudo apt-get update && echo -e \nUpgrade. && sudo apt-get upgrade && echo -e \nDist-Upgrade. && sudo apt-get dist-upgrade && echo -e \nFull-Upgrade'
+alias maj='echo -e ".\n\tUpdate." && sudo apt update && echo -e "..\n\tUpgrade..\a" && sudo apt upgrade -y && echo -e ".....\n\tAuto remove.....\a" && sudo apt autoremove -y && echo -e "...\n\t-----End-----\a"'
+alias majall='echo -e ".\n\tUpdate." && sudo apt update && echo -e "..\n\tUpgrade..\a" && sudo apt upgrade -y && echo -e "...\n\tDist-Upgrade...\a" && sudo apt dist-upgrade -y && echo -e "....\n\tFull-Upgrade....\a" && sudo apt full-upgrade -y && echo -e ".....\n\tAuto remove.....\a" && sudo apt autoremove -y && echo -e "......\n\t---End---"'
 
 ## Power
 alias reb='sudo reboot'
