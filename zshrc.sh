@@ -1,8 +1,6 @@
 # Folders
 alias ll='exa -la'
 alias la='ls -A'
-alias l='exa -la'
-
 alias lll='ls -la'
 alias lla='ls -A'
 #alias l='ls -CF'
