@@ -59,11 +59,13 @@ sudo apt update
 sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo groupadd docker
 sudo usermod -aG docker n0ne
+mkdir -p /home/n0ne/.docker
 sudo chown "n0ne":"n0ne" /home/n0ne/.docker -R
 sudo chmod g+rwx "/home/n0ne/.docker" -R
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 sudo reboot
+cd .docker && docker run hello-world
 
 ## Config locale
 sudo localectl set-locale fr_FR.UTF-8
