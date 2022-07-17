@@ -2,6 +2,26 @@
 
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
 
+## French
+sudo nano /etc/default/locale
+	LANG="fr"
+	LANGUAGE=fr_FR:fr
+	LC_CTYPE="fr_FR.UTF-8"
+	LC_NUMERIC="fr_FR.UTF-8"
+	LC_TIME="fr_FR.UTF-8"
+	LC_COLLATE="fr_FR.UTF-8"
+	LC_MONETARY="fr_FR.UTF-8"
+	LC_MESSAGES="fr_FR.UTF-8"
+	LC_PAPER="fr_FR.UTF-8"
+	LC_NAME="fr_FR.UTF-8"
+	LC_ADDRESS="fr_FR.UTF-8"
+	LC_TELEPHONE="fr_FR.UTF-8"
+	LC_MEASUREMENT="fr_FR.UTF-8"
+	LC_IDENTIFICATION="fr_FR.UTF-8"
+	LC_ALL="fr_FR.UTF-8"
+
+sudo apt install manpages-fr manpages-fr-extra aptitude-doc-fr -y
+
 ## Install ZSH, GIT, CURL
 sudo apt install zsh git curl -y
 ## Install Oh-My-Zsh
