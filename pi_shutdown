@@ -9,4 +9,4 @@
 # Description: Script python pour suveiller l'état d'un pin GPIO et execution de l'arrêt de Raspberry PI
 ### END INIT INFO
 
-sudo python3 /home/n0ne/scripts/shutdown.py &
+sudo python3 /home/n0ne/.scripts/shutdown.py &
