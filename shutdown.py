@@ -5,6 +5,7 @@ import time
 import subprocess
 
 GPIO.setmode(GPIO.BOARD)
+GPIO.setwarnings(False)
 
 # la numérotation utilisé dans ce script correspont à la numérotation physique
 # des broches du Raspberry PI, le pin 5 ici est l'équivalent du GPIO 3
