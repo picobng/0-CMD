@@ -40,7 +40,7 @@ wget https://github.com/45Drives/cockpit-benchmark/releases/download/v0.2.1/cock
 cd /usr/share/cockpit && sudo git clone https://github.com/MRsagi/cockpit-temperature-plugin.git
 
 ## Install Apps
-sudo apt install exa tree neofetch lolcat -y
+sudo apt install exa tree neofetch lolcat screen -y
 
 ## Install Docker
 
