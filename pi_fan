@@ -9,4 +9,4 @@
 # Description: Script python pour contrôle de ventilateur en fonction de la température
 ### END INIT INFO
 
-sudo python3 /home/n0ne/scripts/run-fan.py &
+sudo python3 /home/n0ne/.scripts/fan.py &
