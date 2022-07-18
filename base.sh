@@ -42,6 +42,9 @@ cd /usr/share/cockpit && sudo git clone https://github.com/MRsagi/cockpit-temper
 ## Install Apps
 sudo apt install exa tree neofetch lolcat screen -y
 
+## Install Apps-2
+sudo apt install hdparm -y
+
 ## Install Docker
 
 sudo apt remove docker docker-engine docker.io containerd runc -y
