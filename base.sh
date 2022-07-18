@@ -39,11 +39,8 @@ wget https://github.com/45Drives/cockpit-file-sharing/releases/download/v3.2.0/c
 wget https://github.com/45Drives/cockpit-benchmark/releases/download/v0.2.1/cockpit-benchmark_0.2.1-1focal_all.deb && sudo apt install ./cockpit-benchmark_0.2.1-1focal_all.deb -y
 cd /usr/share/cockpit && sudo git clone https://github.com/MRsagi/cockpit-temperature-plugin.git
 
-## Install exa
-sudo apt install exa -y
-
-## Install Neofetch
-sudo apt install neofetch -y
+## Install Apps
+sudo apt install exa tree neofetch lolcat -y
 
 ## Install Docker
 
