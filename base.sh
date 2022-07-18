@@ -65,9 +65,7 @@ sudo reboot
 cd .docker && docker run hello-world
 
 ## Config locale
-sudo localectl set-locale fr_FR.UTF-8
-sudo localectl set-keymap fr
-sudo localectl set-x11-keymap fr
+sudo localectl set-locale fr_FR.UTF-8 && sudo localectl set-keymap fr && sudo localectl set-x11-keymap fr
 
 ## Changement UDI et GID si besoin
     - sudo usermod -u 1000 foo
