@@ -1,1 +1,4 @@
+## Install PiCade
+# https://learn.pimoroni.com/article/getting-started-with-picade-hat
+
 curl -sS https://get.pimoroni.com/picadehat | bash
