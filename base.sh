@@ -2,6 +2,13 @@
 
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
 
+## User
+sudo adduser n0ne
+sudo usermod -aG sudo n0ne
+sudo usermod -aG adm n0ne
+sudo nano /etc/sudoers
+	n0ne ALL=(ALL) NOPASSWD:ALL
+	
 ## French
 sudo nano /etc/default/locale
 	LANG="fr"
