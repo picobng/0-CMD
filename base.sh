@@ -32,10 +32,7 @@ sudo apt install manpages-fr manpages-fr-extra aptitude-doc-fr -y
 ## Install ZSH, GIT, CURL
 sudo apt install zsh git curl -y
 ## Install Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-## Zsh Theme
-sed -i 's/robbyrussell/xiong-chiamiov-plus/g' .zshrc
-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && sed -i 's/robbyrussell/xiong-chiamiov-plus/g' .zshrc && zsh
 
 #### Install CockPit
 sudo apt install -y cockpit cockpit-doc
