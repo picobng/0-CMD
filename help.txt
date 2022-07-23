@@ -1,3 +1,10 @@
+## User
+sudo adduser n0ne
+sudo usermod -aG sudo n0ne
+sudo usermod -aG adm n0ne
+sudo nano /etc/sudoers
+	n0ne ALL=(ALL) NOPASSWD:ALL
+
 ## Changement UDI et GID si besoin
     - sudo usermod -u 1000 foo
     - sudo groupmod -g 1000 foo
