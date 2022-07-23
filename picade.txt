@@ -1,4 +1,8 @@
 ## Install PiCade
 # https://learn.pimoroni.com/article/getting-started-with-picade-hat
+https://github.com/pimoroni/picade-hat
 
 curl -sS https://get.pimoroni.com/picadehat | bash
+
+## Batocera
+https://mikejolley.com/2021/06/24/using-batocera-linux-on-a-picade-arcade-machine/
