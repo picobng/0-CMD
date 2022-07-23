@@ -1,0 +1,5 @@
+# Firmware & Bootloader
+[2,3,4] sudo rpi-update
+reboot
+[4] sudo rpi-eeprom-update -d -a
+
