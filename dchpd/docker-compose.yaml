@@ -1,0 +1,35 @@
+version: "3.3"
+services:
+    isc-dhcp-server:
+        container_name: z4c_dhcp-server
+        network_mode: host
+        environment:
+            - TZ=Europe/Paris
+            - IP_VERSION=4
+            - INTERFACE=enp0s3
+            - SOURCE_CONF_PATH=/etc/dhcp/dhcpd.conf
+            - RUNTIME_USER=www-data
+        volumes:
+#           - /docker/dhcp/config:/opt/glass-isc-dhcp/config:rw
+            - /docker/dhcp:/etc/dhcp:rw
+            - /docker/dhcp/leases:/var/lib/dhcp:rw
+            - /docker/dhcp/logs:/var/log:rw
+            - /docker/dhcp/config_backups:/opt/glass-isc-dhcp/config_backups:rw
+            - /docker/dhcp:/opt/dhcp:rw
+#           - /docker/dhcp:/opt/glass-isc-dhcp:rw
+            - /opt/glass-isc-dhcp:/opt/glass-isc-dhcp:rw
+            - /docker/dhcp/default:/etc/default:rw
+        image: magnitus/isc-dhcp-server:arm64-latest
+        restart: always
+    glass:
+        image: "node:8"
+        container_name: z4c_dhcp-glass
+        working_dir: /home/node/app
+        environment:
+          - NODE_ENV=production
+        volumes:
+          - .:/home/node/app
+          - /docker/dhcp:/var/lib/dhcp
+        ports:
+          - "8080:8080"
+          - "3000:3000"
