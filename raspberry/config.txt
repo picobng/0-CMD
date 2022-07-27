@@ -1,0 +1,15 @@
+# Prevent continuous SD card polling if using USB/PXE boot
+dtoverlay=sdtweak,poll_once
+
+
+
+[pi4]
+arm_64bit=1
+arm_boost=1
+arm_freq=1800
+gpu_freq=700
+over_voltage=2
+gpu_mem=256
+gpu_mem_256=256
+gpu_mem_512=256
+gpu_mem_1024=448
