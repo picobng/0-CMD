@@ -23,8 +23,6 @@ LC_ALL="fr_FR.UTF-8"" >> /etc/default/locale
 
 ## Config locale
 sudo localectl set-locale fr_FR.UTF-8 && sudo localectl set-keymap fr && sudo localectl set-x11-keymap fr
-
-
 sudo apt install manpages-fr manpages-fr-extra aptitude-doc-fr -y
 
 ## Install ZSH, GIT, CURL
