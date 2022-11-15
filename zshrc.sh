@@ -1,7 +1,8 @@
 ##### Commands #######
 
 ##Login
-neofetch --cpu_display infobar --memory_display infobar --disk_display infobar | lolcat
+neofetch --cpu_display infobar --memory_display infobar --disk_display infobar 
+#| lolcat
 
 ## Explorer
 alias ll='exa -la'
