@@ -15,6 +15,10 @@ alias lla='ls -A'
 alias s="sudo"
 
 ## Update
+alias aup="sudo apt update -y"
+alias aug="sudo apt upgrade -y && sudo apt full-upgrade -y"
+alias ai="sudo apt install -y"
+alias ar="sudo apt remove -y"&
 #alias maj='echo -e ".\n\tUpdate." && sudo apt update && echo -e "..\n\tUpgrade..\a" && sudo apt upgrade -y && echo -e ".....\n\tAuto remove.....\a" && sudo apt autoremove -y && echo -e "...\n\t-----End-----\a"'
 alias maj='echo -e ".\n\tUpdate." && sudo apt update && echo -e "..\n\tUpgrade..\a" && sudo apt upgrade -y && echo -e "...\n\tDist-Upgrade...\a" && sudo apt dist-upgrade -y && echo -e "....\n\tFull-Upgrade....\a" && sudo apt full-upgrade -y && echo -e ".....\n\tAuto remove.....\a" && sudo apt autoremove -y && echo -e "......\n\t---End---"'
 
