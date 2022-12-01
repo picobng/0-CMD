@@ -22,4 +22,8 @@ pamac install python-pip
 # https://archlinux.org/packages/core/x86_64/openssl-1.1/
 tar --use-compress-program=unzstd -xvf openssl-1
 cd usr/lib/
-sudo cp -r * /usr/lib/ 
+sudo cp -r * /usr/lib/
+
+# New terminal
+sudo systemctl stop usbmuxd
+sudo usbmuxd -f -p
