@@ -1,0 +1,35 @@
+## PostMarketOS - Linux CMD
+# https://www.youtube.com/watch?v=RhGDvUC6CEo
+
+sudo apt install -y python3-pip fastboot android-platform-tools-base
+pip3 install --user pmbootstrap
+
+cd .local/bin
+./pmbootstrap init
+  [enter]
+  edge
+  oneplus
+  fajita
+  [enter]
+  n0ne
+  xfce4
+  [enter]
+  [enter]
+  [enter]
+  fr_FR.UTF-8
+  [enter]
+  6t
+  [enter]
+  
+./pmbootstrap install --split
+./pmbootstrap export
+
+# Plug Phone
+fastboot devices
+fastboot --set-active=b
+# Restart bootloader
+fastboot flash userdata /tmp/postmarketOS-export/oneplus-fajita-root.img
+fastboot flash vendor /tmp/postmarketOS-export/oneplus-fajita-boot.img
+fastboot flash boot /tmp/postmarketOS-export/boot.img
+fastboot erase dtbo
+fastboot reboot
