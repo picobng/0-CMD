@@ -1,5 +1,8 @@
 #! /bin/sh
 
+#Ibramenu
+sudo wget -qO ./i https://i.ibracorp.io/i && sudo chmod +x i && sudo ./i all
+
 ##First Update
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
 	
