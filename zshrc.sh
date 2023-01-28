@@ -43,7 +43,7 @@ alias dc-u="docker compose up -d"
 alias dc-d="docker compose down"
 
 ## HDD
-alias hdd='sudo hdparm -t --direct /dev/vda'alias hdd='sudo hdparm -t --direct /dev/vda'
+alias hdd='sudo hdparm -t --direct /dev/vda'
 
 ##Raspberry
 alias temp="sudo watch -n 2 vcgencmd measure_temp"
