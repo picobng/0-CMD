@@ -40,6 +40,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ### Activation des plugins
 nano ~/.zshrc
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+## Customise Zsh with Powerlevek10k theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+nano ~/.zshrc
+ZSH_THEME="powerlevel10k/powerlevel10k"
+## Optional : To change your default login shell
+chsh
+/bin/zsh
 
 
 #### Install CockPit
