@@ -64,3 +64,8 @@ alias listen="sudo ss -tulpn | grep LISTEN"
 ###### HDD
 alias hdd='sudo hdparm -t --direct /dev/vda'alias hdd='sudo hdparm -t --direct /dev/vda'
 alias chkdsk='sudo shutdown -rF now'
+
+####### Raspberry
+alias temp="sudo watch -n 2 vcgencmd measure_temp"
+alias temp2="awk '{printf("\ntemp=%.1f°C\n\n",$1/1e3)}' /sys/class/thermal/thermal_zone0/temp"
+alias freq="sudo watch -n1 vcgencmd measure_clock arm"
