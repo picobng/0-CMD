@@ -1,12 +1,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="xiong-chiamiov-plus"
+## OhMyZsh!
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
 zstyle ':omz:update' mode auto      # update automatically without asking
 zstyle ':omz:update' frequency 13
+ZSH_THEME="xiong-chiamiov-plus"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-#COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd/mm/yyyy"
 ZSH_CUSTOM="~/.zsh_custom"
 plugins=(git)
