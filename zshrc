@@ -66,6 +66,7 @@ alias dcp="docker compose pull"
 alias dcu="docker compose up"
 alias dcud="docker compose up -d"
 alias dcd="docker compose down"
+alias dcn="nano docker-compose.yml"
 
 ##### Network
 # Voir les statistiques réseau d'une machine donnée (usage : flic 10.10.10.10)
@@ -82,3 +83,7 @@ alias chkdsk='sudo shutdown -rF now'
 alias temp="sudo watch -n 2 vcgencmd measure_temp"
 alias temp2="awk '{printf("\ntemp=%.1f°C\n\n",$1/1e3)}' /sys/class/thermal/thermal_zone0/temp"
 alias freq="sudo watch -n1 vcgencmd measure_clock arm"
+
+##################### Test ##########################
+#alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /home/n0ne/.docker/lazy/config:/.config/jesseduffield/lazydocker lazyt>
+
