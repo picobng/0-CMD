@@ -15,7 +15,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 # X-commands
-mkdir ~/git && cd git && git clone https://github.com/gogosoon/x-commands.git && cd ~
+mkdir -p ~/git && cd git && git clone https://github.com/gogosoon/x-commands.git && cd ~
 source ~/git/x-commands/aliasCommands.sh
 
 # WELCOME !!!
