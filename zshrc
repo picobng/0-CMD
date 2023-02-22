@@ -27,9 +27,15 @@ export LANG=fr_FR.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 
 # ZSH
+alias zshn='nano ~/.zshrc'
+alias zshu='source  ~/.zshrc'
+
 alias zshrc="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
+
 alias zshmaj="source ~/.zshrc"
+
+
 
 ## Explorer
 alias la='ls -A'
