@@ -32,10 +32,7 @@ alias zshu='source  ~/.zshrc'
 
 alias zshrc="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
-
 alias zshmaj="source ~/.zshrc"
-
-
 
 ## Explorer
 alias la='ls -A'
@@ -43,6 +40,8 @@ alias l='exa -la'
 alias ll='exa -la'
 alias lll='ls -la'
 alias lla='ls -A'
+alias cdh='cd ~'
+alias gohome="cd ~/;echo Navigated to home directory"
 
 ## Update
 alias maj='echo -e ".\n\tUpdate." && sudo apt update && echo -e "..\n\tUpgrade..\a" && sudo apt upgrade -y && \
