@@ -21,10 +21,11 @@ source ~/git/x-commands/aliasCommands.sh
 # WELCOME !!!
 neofetch --cpu_display infobar --memory_display infobar --disk_display infobar
 
-# User configuration
-# export MANPATH="/usr/local/man:$MANPATH"
+# User 
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export MANPATH="/usr/local/man:$MANPATH"
 export LANG=fr_FR.UTF-8
-# export ARCHFLAGS="-arch x86_64"
+#export ARCHFLAGS="-arch x86_64"
 
 # ZSH
 alias zshn='nano ~/.zshrc'
