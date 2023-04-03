@@ -20,11 +20,13 @@
 ################################################################################################
 ################################################################################################
 ################################################################################################
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
 
 ##### OhMyZsh!
-
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+## Fedora
+# sudo dnf install util-linux-user
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 zstyle ':omz:update' mode auto      # update automatically without asking
