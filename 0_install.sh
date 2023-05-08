@@ -3,27 +3,6 @@
 ## First Update
 sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
 	
-## French
-#sudo nano /etc/default/locale
-sudo echo "LANG="fr" 
-LANGUAGE=fr_FR:fr 
-LC_CTYPE="fr_FR.UTF-8" 
-LC_NUMERIC="fr_FR.UTF-8" 
-LC_TIME="fr_FR.UTF-8" 
-LC_COLLATE="fr_FR.UTF-8" 
-LC_MONETARY="fr_FR.UTF-8" 
-LC_MESSAGES="fr_FR.UTF-8" 
-LC_PAPER="fr_FR.UTF-8" 
-LC_NAME="fr_FR.UTF-8" 
-LC_ADDRESS="fr_FR.UTF-8" 
-LC_TELEPHONE="fr_FR.UTF-8" 
-LC_MEASUREMENT="fr_FR.UTF-8" 
-LC_IDENTIFICATION="fr_FR.UTF-8" 
-LC_ALL="fr_FR.UTF-8"" >> /etc/default/locale
-
-sudo localectl set-locale fr_FR.UTF-8 && sudo localectl set-keymap fr && sudo localectl set-x11-keymap fr
-sudo apt install manpages-fr manpages-fr-extra aptitude-doc-fr -y
-
 ### Install ZSH, GIT, CURL
 sudo apt install zsh git curl -y
 ## Install Oh-My-Zsh
@@ -57,3 +36,26 @@ sudo apt install -y cockpit cockpit-doc && cd /tmp && wget https://github.com/45
 # Ibramenu
 sudo wget -qO ./i https://i.ibracorp.io/i && sudo chmod +x i && sudo ./i all
 
+
+
+
+## French
+#sudo nano /etc/default/locale
+sudo echo "LANG="fr" 
+LANGUAGE=fr_FR:fr 
+LC_CTYPE="fr_FR.UTF-8" 
+LC_NUMERIC="fr_FR.UTF-8" 
+LC_TIME="fr_FR.UTF-8" 
+LC_COLLATE="fr_FR.UTF-8" 
+LC_MONETARY="fr_FR.UTF-8" 
+LC_MESSAGES="fr_FR.UTF-8" 
+LC_PAPER="fr_FR.UTF-8" 
+LC_NAME="fr_FR.UTF-8" 
+LC_ADDRESS="fr_FR.UTF-8" 
+LC_TELEPHONE="fr_FR.UTF-8" 
+LC_MEASUREMENT="fr_FR.UTF-8" 
+LC_IDENTIFICATION="fr_FR.UTF-8" 
+LC_ALL="fr_FR.UTF-8"" >> /etc/default/locale
+
+sudo localectl set-locale fr_FR.UTF-8 && sudo localectl set-keymap fr && sudo localectl set-x11-keymap fr
+sudo apt install manpages-fr manpages-fr-extra aptitude-doc-fr -y
