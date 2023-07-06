@@ -95,7 +95,9 @@ alias dcp="docker compose pull"
 alias dcu="docker compose up"
 alias dcud="docker compose up -d"
 alias dcd="docker compose down"
-alias dcn="nano docker-compose.yml"
+alias dcn='nano docker-compose.yml'
+alias dcf='dcd && dcp && dcud'
+alias dcl='docker compose logs'
 
 ##### Network
 # Voir les statistiques réseau d'une machine donnée (usage : flic 10.10.10.10)
