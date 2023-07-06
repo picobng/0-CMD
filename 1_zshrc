@@ -55,7 +55,7 @@ export LANG=fr_FR.UTF-8
 
 ## Nano
 #alias sn='sudo nano'
-a#lias nano='sudo nano'
+#alias nano='sudo nano'
 
 # ZSH
 alias zshn='nano ~/.zshrc'
