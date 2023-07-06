@@ -13,3 +13,7 @@ sudo nano /etc/sudoers
         - sudo id -g foo
         - sudo grep foo /etc/passwd
         - sudo grep foo /etc/group
+
+## SSH
+systemctl disable --now ssh.socket
+systemctl enable --now ssh.service
