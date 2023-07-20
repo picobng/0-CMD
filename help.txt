@@ -17,6 +17,13 @@ sudo nano /etc/sudoers
 ## SSH
 systemctl disable --now ssh.socket
 systemctl enable --now ssh.service
+ou
+sudo mkdir /etc/systemd/system/ssh.socket.d
+sudo nano /etc/systemd/system/ssh.socket.d/listen.conf
+[Socket]
+ListenStream=22666
+sudo systemctl daemon-reload
+sudo systemctl restart ssh
 
 ## Docker
 curl -fsSL https://get.docker.com -o get-docker.sh
