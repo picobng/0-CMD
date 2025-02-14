@@ -41,8 +41,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 # X-commands
-mkdir -p ~/git && rm -rf ~/git/x-commands/ && mkdir -p ~/git && cd ~/git && git clone https://github.com/gogosoon/x-commands.git && cd ~
-source ~/git/x-commands/aliasCommands.sh
+#mkdir -p ~/git && rm -rf ~/git/x-commands/ && mkdir -p ~/git && cd ~/git && git clone https://github.com/gogosoon/x-commands.git && cd ~
 
 # WELCOME !!!
 neofetch --cpu_display infobar --memory_display infobar --disk_display infobar
