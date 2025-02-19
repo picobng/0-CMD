@@ -29,19 +29,15 @@ chsh
 # For curl command: $ sudo curl -sSL https://get.docker.io/ | sh
 # For wget command: $ sudo wget -qO- https://get.docker.io/ | sh
 
-
 #### Install CockPit
 sudo apt install -y cockpit cockpit-doc && cd /tmp && wget https://github.com/45Drives/cockpit-navigator/releases/download/v0.5.8/cockpit-navigator_0.5.8-1focal_all.deb && sudo apt install ./cockpit-navigator_0.5.8-1focal_all.deb && wget https://github.com/45Drives/cockpit-file-sharing/releases/download/v3.2.0/cockpit-file-sharing_3.2.0-1focal_all.deb && sudo apt install ./cockpit-file-sharing_3.2.0-1focal_all.deb -y && wget https://github.com/45Drives/cockpit-benchmark/releases/download/v0.2.1/cockpit-benchmark_0.2.1-1focal_all.deb && sudo apt install ./cockpit-benchmark_0.2.1-1focal_all.deb -y && cd /usr/share/cockpit && sudo git clone https://github.com/MRsagi/cockpit-temperature-plugin.git
 
 # Ibramenu
 sudo wget -qO ./i https://i.ibracorp.io/i && sudo chmod +x i && sudo ./i all
 
-
-
-
 ## French
-#sudo nano /etc/default/locale
-sudo echo "LANG="fr" 
+#sudo nano /etc/default/locale >>>>
+LANG=fr_FR.UTF-8
 LANGUAGE=fr_FR:fr 
 LC_CTYPE="fr_FR.UTF-8" 
 LC_NUMERIC="fr_FR.UTF-8" 
@@ -58,4 +54,4 @@ LC_IDENTIFICATION="fr_FR.UTF-8"
 LC_ALL="fr_FR.UTF-8"" >> /etc/default/locale
 
 sudo localectl set-locale fr_FR.UTF-8 && sudo localectl set-keymap fr && sudo localectl set-x11-keymap fr
-sudo apt install manpages-fr manpages-fr-extra aptitude-doc-fr -y
+sudo apt install -y manpages-fr procps manpages-fr-dev manpages-fr aptitude-doc-fr #manpages-fr-extra
