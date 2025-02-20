@@ -45,21 +45,21 @@ screenfetch
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export MANPATH="/usr/local/man:$MANPATH"
 
-export LANG=fr_FR.UTF-8
-export LANGUAGE=fr_FR:fr
-export LC_CTYPE="fr_FR.UTF-8"
-export LC_NUMERIC="fr_FR.UTF-8"
-export LC_TIME="fr_FR.UTF-8"
-export LC_COLLATE="fr_FR.UTF-8"
-export LC_MONETARY="fr_FR.UTF-8"
-export LC_MESSAGES="fr_FR.UTF-8"
-export LC_PAPER="fr_FR.UTF-8"
-export LC_NAME="fr_FR.UTF-8"
-export LC_ADDRESS="fr_FR.UTF-8"
-export LC_TELEPHONE="fr_FR.UTF-8"
-export LC_MEASUREMENT="fr_FR.UTF-8"
-export LC_IDENTIFICATION="fr_FR.UTF-8"
-export LC_ALL="fr_FR.UTF-8"
+#export LANG=fr_FR.UTF-8
+#export LANGUAGE=fr_FR:fr
+#export LC_CTYPE="fr_FR.UTF-8"
+#export LC_NUMERIC="fr_FR.UTF-8"
+#export LC_TIME="fr_FR.UTF-8"
+#export LC_COLLATE="fr_FR.UTF-8"
+#export LC_MONETARY="fr_FR.UTF-8"
+#export LC_MESSAGES="fr_FR.UTF-8"
+#export LC_PAPER="fr_FR.UTF-8"
+#export LC_NAME="fr_FR.UTF-8"
+#export LC_ADDRESS="fr_FR.UTF-8"
+#export LC_TELEPHONE="fr_FR.UTF-8"
+#export LC_MEASUREMENT="fr_FR.UTF-8"
+#export LC_IDENTIFICATION="fr_FR.UTF-8"
+#export LC_ALL="fr_FR.UTF-8"
 
 export ARCHFLAGS="-arch x86_64"
 
@@ -76,11 +76,9 @@ alias zshu='source ~/.zshrc'
 alias ohmyzsh="cd ~ && nano .oh-my-zsh/oh-my-zsh.sh"
 
 ## Explorer
-alias la='ls -A'
-alias l='exa -la'
-alias ll='exa -la'
-alias lll='ls -la'
-alias lla='ls -A'
+alias l='colorls -al'
+alias la='exa -la'
+alias ll="exa --long --all --group"
 
 ## Update
 alias maj='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y'
@@ -127,7 +125,8 @@ alias lzd='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v /
 #export platform="linux" && wget https://github.com/sayanarijit/xplr/releases/latest/download/xplr-$platform.tar.gz && tar xzvf xplr-$platform.tar.gz && sudo mv xplr /usr/local/bin/ && mkdir -p ~/.config/xplr && version="$(xplr --version | awk '{print $2}')" && echo "version = '${version:?}'" > ~/.config/xplr/init.lua
 ## Brew
 #alias brewi='/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 ## APT
 #alias toolz='sudo apt install -y nala eza nano zsh tree neowofetch tldr git curl wget xrdp tasksel snap flatpak zram-tools preload gnome-software-plugin-flatpak'
 #alias docki='sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin'
