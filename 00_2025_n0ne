@@ -1,0 +1,53 @@
+##### .n0ne
+## System
+alias reb='sudo reboot now'
+alias shut='sudo shutdown now'
+alias cls='clear'
+alias x='exit'
+
+## SSH
+alias sshh='ssh n0ne@hc.n0ne.me -p 22666'
+alias sshe='ssh n0ne@fb.n0ne.me -p 22666'
+
+## SHELL
+alias l='eza -a'
+alias ls='eza -a'
+alias ll='eza -a'
+alias la='ls -a'
+alias s='sudo'
+alias n='sudo nano'
+alias sn='sudo nano'
+alias nano='sudo nano'
+alias bat='batcat'
+alias cat='batcat'
+
+############ ZSH & Alias
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+alias zrc="nano ~/.zshrc"
+alias zu="source ~/.zshrc"
+alias nrc="nano ~/.n0ne"
+alias nu="source ~/.n0ne"
+alias brc='sn ~/.bashrc'
+alias bu='source ~/.bashrc'
+alias arc='sn ~/.bash_aliases'
+alias au='source ~/.bash_aliases'
+
+
+## MAJ
+alias maj='sudo apt update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo dpkg --configure -a && flatpak update && flatpak upgrade && snap refresh'
+alias naj='sudo nala update && sudo nala upgrade -y && sudo nala autoremove -y'
+
+############## Docker
+# sudo systemctl enable --now docker.service && sudo systemctl enable --now containerd.service && sudo systemctl start docker.service && sudo systemctl start containerd.service
+
+alias doc='docker ps -a'
+alias dcn='nano docker-compose.yml'
+alias dcd='docker compose down'
+alias dcp='docker compose pull'
+alias dcud='docker compose up -d'
+alias dcl='docker compose logs'
+alias dclf='docker compose logs -f'
+
+############## Brew
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# echo >> /home/n0ne/.bashrc && echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/n0ne/.bashrc && eval "$(/home/linuxbrew/.linux>
