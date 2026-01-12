@@ -30,7 +30,7 @@ alias zrc="nano ~/.zshrc"
 alias zu="source ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh/oh-my-zsh.sh"
 
-source ~/.bash_aliases
+#source ~/.bash_aliases
 source ~/.n0ne
 ##################################
 screenfetch
@@ -41,4 +41,4 @@ echo ' - User : ' && whoami
 echo ' - Path : ' && pwd
 echo ' - Arch : ' && uname -m
 echo ' - LAN : ' &&  hostname -I | cut -d' ' -f1
-echo ' - WAN : ' && exip -p 4
+#echo ' - WAN : ' && exip -p 4
